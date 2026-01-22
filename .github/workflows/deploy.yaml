@@ -1,0 +1,14 @@
+name: Deploy
+on:
+  push:
+    branches: [ "main" ]
+jobs:
+  deploy:
+    runs-on: self-hosted
+    steps:
+name: Checkout Code
+      uses: actions/checkout@v4
+name: Deploy web
+      run: |
+          cd /var/www/html
+          git pull
