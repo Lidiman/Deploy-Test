@@ -11,5 +11,5 @@ jobs:
         uses: actions/checkout@v4
       - name: Deploy web
         run: |
-          cd /var/www/html
+          cd /var/www/Deploy-Test
           git pull
