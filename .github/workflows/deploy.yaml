@@ -6,9 +6,9 @@ jobs:
   deploy:
     runs-on: self-hosted
     steps:
-name: Checkout Code
-      uses: actions/checkout@v4
-name: Deploy web
-      run: |
-          cd /var/www/html
+      - name: Checkout Code
+        uses: actions/checkout@v4
+      - name: Deploy web
+        run: |
+          cd /var/www/Deploy-Test
           git pull
